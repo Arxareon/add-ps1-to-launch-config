@@ -1,0 +1,65 @@
+{
+	"name": "add-ps1-to-launch-config",
+	"displayName": "Add PS1 to Launch Configuration",
+	"description": "A simple utility to add an entry for a PowerShell script to Launch Configuration via its right‑click menu.",
+	"version": "1.0.0",
+	"publisher": "Arxareon",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"type": "module",
+	"categories": [
+		"Debuggers"
+	],
+	"keywords": [
+		"powershell",
+		"launch",
+		"debug",
+		"configuration",
+		"script"
+	],
+	"main": "./extension.js",
+	"icon": "assets/logo.png",
+	"contributes": {
+		"commands": [
+			{
+				"command": "add-ps1-to-launch-config.addToLaunchConfig",
+				"title": "Add to Launch Configuration"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "add-ps1-to-launch-config.addToLaunchConfig",
+					"when": "resourceExtname == .ps1",
+					"group": "inline"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "add-ps1-to-launch-config.addToLaunchConfig",
+					"when": "resourceExtname == .ps1",
+					"group": "inline"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "add-ps1-to-launch-config.addToLaunchConfig",
+					"when": "resourceExtname == .ps1",
+					"group": "inline"
+				}
+			]
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Arxareon/add-ps1-to-launch-config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Arxareon/add-ps1-to-launch-config/issues"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"jsonc-parser": "^3.3.1"
+	}
+}
