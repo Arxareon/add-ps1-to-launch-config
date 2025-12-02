@@ -2,3 +2,9 @@
 .gitignore
 CONTRIBUTING.md
 package-lock.json
+.github/**
+**/*.test.*
+**/*.map
+__tests__/**
+tsconfig.json
+webpack.config.js
