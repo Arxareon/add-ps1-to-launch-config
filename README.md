@@ -4,6 +4,8 @@
 
 A simple utility to add an entry for a PowerShell script to Launch Configuration via its right‑click menu.
 
+[Add PS1 to Launch Configuration @ Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Arxareon.add-ps1-to-launch-config)
+
 ## Usage
 - Right‑click a `.ps1` file in the Explorer tree of an opened project or in the editor view, and choose `Add to Launch Configuration`
 - A PowerShell launch entry will be added for the specific script to `.vscode/launch.json`: `"configurations": []`
