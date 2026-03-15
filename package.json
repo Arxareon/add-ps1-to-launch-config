@@ -2,8 +2,11 @@
 	"name": "add-ps1-to-launch-config",
 	"displayName": "Add PS1 to Launch Configuration",
 	"description": "A simple utility to add an entry for a PowerShell script to Launch Configuration via its right‑click menu.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "Arxareon",
+	"funding": {
+		"url": "https://github.com/sponsors/Arxareon"
+	},
 	"engines": {
 		"vscode": "^1.80.0"
 	},

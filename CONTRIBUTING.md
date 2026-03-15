@@ -6,7 +6,7 @@
 git clone https://github.com/Arxareon/add-ps1-to-launch-config
 ```
 
-2. Install dependencies
+2. Install dependencies *(via **Command Prompt**)*
 ```
 cd add-ps1-to-launch-config
 npm install
